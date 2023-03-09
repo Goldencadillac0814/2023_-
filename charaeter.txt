@@ -1,0 +1,36 @@
+function setup() {
+  createCanvas(400, 400);
+  textSize(52);
+}
+
+function draw() {
+  background(204, 255, 204);
+  fill(51, 204, 51);
+  text("거북이",120, 150);
+  
+  fill(153, 102, 0);
+  ellipse(200, 380, 100, 170);//등껍질
+  
+  fill(51, 204, 51);
+  ellipse(200, 380, 80, 150);//몸통
+  ellipse(200, 300, 150, 120);//머리
+
+  fill(255);
+  ellipse(160, 270, 30, 30);//왼쪽 눈
+  fill(0);
+  ellipse(160, 270, 10, 10);//왼쪽 눈
+
+  fill(255);
+  ellipse(240, 270, 30, 30);//오른쪽 눈
+  fill(0);
+  ellipse(240, 270, 10, 10);//오른쪽 눈
+
+  noFill();
+  strokeWeight(3);
+  arc(200, 320, 50, 40, 0, PI);//입
+
+  fill(51, 204, 51);
+  ellipse(150, 350, 40, 80);//팔
+  ellipse(250, 350, 40, 80);//팔
+
+}
