@@ -1,7 +1,7 @@
 PImage img;
 
 void preload(){
-  img = loadImage("s1.png");
+  img = loadImage("s.png");
   
 }
 
