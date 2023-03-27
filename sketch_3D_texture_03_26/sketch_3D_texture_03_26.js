@@ -3,7 +3,6 @@ let scl = 20;
 let w = 1400;
 let h = 1000;
 let img;
-let IMG;
 let flying = 0;
 let terrain = [];
 
