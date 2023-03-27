@@ -11,7 +11,6 @@ function setup() {
 
   createCanvas(600, 600, WEBGL);
   img = loadImage("https://raw.githubusercontent.com/Goldencadillac0814/2023_computer_graphics/main/gold.png");
-  IMG = loadImage("https://raw.githubusercontent.com/Goldencadillac0814/2023_computer_graphics/main/C1.jpg");
   cols = w / scl;
   rows = h / scl;
   noStroke();
