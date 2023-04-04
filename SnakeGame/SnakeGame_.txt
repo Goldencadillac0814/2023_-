@@ -85,9 +85,9 @@ function scoreboard() {
   fill(255);
   textFont("Georgia");
   textSize(18);
-  text("Score: ", 10, 625);
+  text("Score: ", 50, 625);
   text("Highscore: ", 450, 625);
-  text(s.score, 70, 625);
+  text(s.score, 110, 625);
   text(s.highscore, 540, 625);
 }
 
