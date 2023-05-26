@@ -11,46 +11,39 @@
     <script defer src="face-api.min.js"></script>
     <script defer src="myscript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
-    <title>출석부</title>
+    <title>출석 대신하는 얼굴인식시스템</title>
 
     <style>
-     
-
-      #Photo {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
+        #Photo {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: flex-start;
         }
-
-      #l-Photo {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-right: 20px;
-            padding: 20px;
-            align-self: flex-start;
+      
+        #l-Photo {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
         }
-
-      #r-Photo {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            align-self: flex-start;
-            position: static;
+      
+        #r-Photo {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
         }
-
-      table {
-            border-collapse: collapse;
-            margin-top: 10px;
-            border-top: 5px solid #000;
-            border-bottom: 5px solid #000;
+      
+        table {
+          border-collapse: collapse;
+          margin-top: 10px;
+          border-top: 5px solid #000;
+          border-bottom: 5px solid #000;
         }
-
-    </style>
+      </style>
+      
 </head>
 
   <body>
@@ -58,9 +51,9 @@
         <div id="l-Photo">
             <video id="video" width="650" height="500" autoplay muted></video>
             <div>
-                <button id="captureButton">캡처</button>
-                <button id="attendBtn">출석</button>
-                <button id="excelBtn">엑셀</button>
+                <button id="captureButton">Capture</button>
+                <button id="attendBtn">Attendance</button>
+                <button id="excelBtn">print</button>
 
                 <script>
                     const btn = document.getElementById('captureButton')
