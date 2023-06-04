@@ -1,8 +1,3 @@
-const { createCanvas, loadImage } = require('canvas');
-globalThis.createCanvas = createCanvas;
-globalThis.loadImage = loadImage;
-
-
 let video;
 let poseNet;
 let poses = [];
